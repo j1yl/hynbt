@@ -1,0 +1,45 @@
+{
+  "info": {
+    "art_of_war_count": 1,
+    "gems": {
+      "COMBAT_0": "PERFECT",
+      "COMBAT_0_gem": "ONYX",
+      "SAPPHIRE_0": "PERFECT",
+      "unlocked_slots": [
+        "SAPPHIRE_0",
+        "COMBAT_0"
+      ]
+    },
+    "hot_potato_count": 15,
+    "id": "HYPERION",
+    "modifier": "fabled",
+    "rarity_upgrades": 1,
+    "stats_book": 535,
+    "timestamp": 1730063877869,
+    "upgrade_level": 10,
+    "uuid": "b67c73b3-a22c-4d3f-ac30-9be6892982cb"
+  },
+  "enchants": {
+    "cleave": 5,
+    "critical": 7,
+    "cubism": 5,
+    "dragon_hunter": 1,
+    "ender_slayer": 6,
+    "execute": 5,
+    "experience": 4,
+    "fire_aspect": 3,
+    "first_strike": 5,
+    "impaling": 3,
+    "lethality": 6,
+    "looting": 4,
+    "luck": 6,
+    "scavenger": 4,
+    "smite": 7,
+    "syphon": 5,
+    "thunderlord": 7,
+    "titan_killer": 7,
+    "ultimate_chimera": 5,
+    "vampirism": 6,
+    "venomous": 5
+  }
+}
