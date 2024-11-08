@@ -5,8 +5,10 @@ import (
 	"compress/gzip"
 	"encoding/base64"
 	"encoding/json"
+	"fmt"
 	"io"
 	"os"
+	"time"
 
 	"github.com/Tnze/go-mc/nbt"
 )
@@ -36,6 +38,7 @@ func main() {
 }
 
 func ParseNBTString(raw string) ItemData {
+	start := time.Now()
 	// decode the NBT string
 	z, _ := base64.StdEncoding.DecodeString(raw)
 	gzreader, _ := gzip.NewReader(bytes.NewReader(z))
@@ -52,6 +55,9 @@ func ParseNBTString(raw string) ItemData {
 	} else {
 		enchants = map[string]interface{}{}
 	}
+
+	elapsed := time.Since(start)
+	fmt.Printf("time taken: %v\n", elapsed.Microseconds())
 
 	return ItemData{
 		Enchants: enchants,
